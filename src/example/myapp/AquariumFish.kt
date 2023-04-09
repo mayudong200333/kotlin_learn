@@ -34,5 +34,6 @@ fun matchSeal(seal:Seal):String{
     return when(seal){
         is Walrus -> "walrus"
         is SeaLion -> "sea lion"
+        else -> "Nothing"
     }
 }

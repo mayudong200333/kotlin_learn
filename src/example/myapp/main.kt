@@ -22,4 +22,6 @@ fun main(){
 
     println(matchSeal(SeaLion()))
     println(matchSeal(Walrus()))
+
+    val Aq = Aquarium(numberOfFish = 10)
 }

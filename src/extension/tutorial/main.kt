@@ -1,5 +1,10 @@
 package extension.tutorial
 
+fun String.hasSpaces(): Boolean{
+    val found = this.find{it == ' '}
+    return found != null
+}
+
 fun main(){
     val (tool,use) = "fish net" to "catching fish"
     println("${tool} used for ${use}")
@@ -26,4 +31,6 @@ fun main(){
     println(cures.getOrDefault("bb","Idon't know"))
     cures.remove("red sores")
     println(cures.toString())
+
+    println("Does it have spaces?".hasSpaces())
 }
